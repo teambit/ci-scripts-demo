@@ -1,12 +1,17 @@
 name: Bit Merge
 
 on:
-  push:
-    branches:
-      - main
+  pull_request:
+    types: [closed]
+    branches: [main]
+
+permissions:
+  contents: write
+  pull-requests: write
 
 jobs:
-  main-deploy:
+  main-merge:
+    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     container:
       image: bitsrc/stable:1.9.124-alpine
