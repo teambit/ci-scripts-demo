@@ -1,0 +1,26 @@
+name: Bit Merge
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  main-deploy:
+    runs-on: ubuntu-latest
+    container:
+      image: bitsrc/stable:1.9.124-alpine
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: bit install
+        env:
+          BIT_CONFIG_USER_TOKEN: ${{ secrets.BIT_ACCESS_TOKEN }} 
+
+      - name: Merge
+        run: bit ci merge -b
+        env:
+          BIT_CONFIG_USER_TOKEN: ${{ secrets.BIT_ACCESS_TOKEN }} 
