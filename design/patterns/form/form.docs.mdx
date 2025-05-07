@@ -53,26 +53,6 @@ function MyComponent() {
 }
 ```
 
-## Props
-
-| Prop | Type | Default | Description |
-|------|------|---------|-------------|
-| fields | FormField[] | required | Array of form field configurations |
-| onSubmit | (values: Record<string, string>) => void | required | Callback when form is submitted |
-| submitText | string | 'Submit' | Text to display on the submit button |
-| initialValues | Record<string, string> | {} | Initial values for form fields |
-
-### FormField Type
-
-| Property | Type | Required | Description |
-|----------|------|----------|-------------|
-| name | string | Yes | Unique identifier for the field |
-| label | string | Yes | Label text for the field |
-| type | 'text' \| 'email' \| 'password' \| 'select' | Yes | Type of input field |
-| placeholder | string | No | Placeholder text for the field |
-| required | boolean | No | Whether the field is required |
-| options | Array<{ label: string; value: string }> | No | Options for select type fields |
-
 ## Examples
 
 ### Basic Form
