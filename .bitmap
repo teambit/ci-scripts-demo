@@ -33,7 +33,7 @@
     "ui/input": {
         "name": "ui/input",
         "scope": "automations.design",
-        "version": "0.0.1",
+        "version": "0.0.2",
         "mainFile": "index.ts",
         "rootDir": "design/ui/input"
     },
