@@ -82,6 +82,8 @@ export function Dropdown({
         e.preventDefault();
         if (!isOpen) setIsOpen(true);
         break;
+      default:
+        break;
     }
   };
 
@@ -91,6 +93,13 @@ export function Dropdown({
     setIsOpen(false);
   };
 
+  const handleOptionKeyDown = (e: React.KeyboardEvent, option: DropdownOption) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      handleOptionClick(option);
+    }
+  };
+
   return (
     <div 
       ref={dropdownRef}
@@ -98,7 +107,17 @@ export function Dropdown({
       onKeyDown={handleKeyDown}
     >
       {trigger ? (
-        <div onClick={() => !disabled && setIsOpen(!isOpen)}>
+        <div 
+          onClick={() => !disabled && setIsOpen(!isOpen)}
+          onKeyDown={(e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+              e.preventDefault();
+              !disabled && setIsOpen(!isOpen);
+            }
+          }}
+          role="button"
+          tabIndex={0}
+        >
           {trigger}
         </div>
       ) : (
@@ -130,8 +149,10 @@ export function Dropdown({
                   : 'hover:bg-gray-100'
               } ${option.value === value ? 'bg-gray-50' : ''}`}
               onClick={() => handleOptionClick(option)}
+              onKeyDown={(e) => handleOptionKeyDown(e, option)}
               role="option"
               aria-selected={option.value === value}
+              tabIndex={0}
             >
               {option.label}
             </div>

@@ -1,6 +1,6 @@
 import { render, screen, fireEvent } from '@testing-library/react';
-import { BasicDropdown } from './dropdown.composition.js';
 import { vi } from 'vitest';
+import { BasicDropdown } from './dropdown.composition.js';
 
 describe('Dropdown', () => {
   it('should render with placeholder text', () => {

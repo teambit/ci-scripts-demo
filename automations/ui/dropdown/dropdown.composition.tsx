@@ -1,6 +1,11 @@
 import React from 'react';
 import { Dropdown } from './dropdown.js';
 
+const handleChange = (value: string) => {
+  // Mock function for demonstration
+  return value;
+};
+
 export const BasicDropdown = () => {
   const options = [
     { label: 'Option 1', value: '1' },
@@ -13,7 +18,7 @@ export const BasicDropdown = () => {
       <Dropdown
         options={options}
         placeholder="Select an option"
-        onChange={(value) => console.log('Selected:', value)}
+        onChange={handleChange}
       />
     </div>
   );
@@ -32,7 +37,7 @@ export const DisabledDropdown = () => {
         options={options}
         placeholder="Select an option"
         disabled
-        onChange={(value) => console.log('Selected:', value)}
+        onChange={handleChange}
       />
     </div>
   );
@@ -50,7 +55,7 @@ export const WithCustomTrigger = () => {
       <Dropdown
         options={options}
         trigger={<button className="px-4 py-2 bg-blue-500 text-white rounded-md">Custom Trigger</button>}
-        onChange={(value) => console.log('Selected:', value)}
+        onChange={handleChange}
       />
     </div>
   );
