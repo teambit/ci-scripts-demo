@@ -16,6 +16,11 @@ jobs:
         run: bit install
         env:
           BIT_CONFIG_USER_TOKEN: ${{ secrets.BIT_ACCESS_TOKEN }} 
+      
+      - name: List components
+        run: bit list
+        env:
+          BIT_CONFIG_USER_TOKEN: ${{ secrets.BIT_ACCESS_TOKEN }} 
 
       - name: Verify workspace
         run: bit ci verify
