@@ -1,6 +1,7 @@
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
 import { Card } from './card.js';
+import { vi } from 'vitest';
 
 describe('Card', () => {
   it('renders title and content', () => {
@@ -36,7 +37,7 @@ describe('Card', () => {
   });
 
   it('handles click events when clickable', () => {
-    const handleClick = jest.fn();
+    const handleClick = vi.fn();
     render(
       <Card title="Test Title" onClick={handleClick}>
         <p>Test Content</p>

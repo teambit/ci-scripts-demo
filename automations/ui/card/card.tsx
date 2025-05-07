@@ -68,7 +68,7 @@ export function Card({
     <div 
       className={cardClasses}
       onClick={onClick}
-      data-testid={testId}
+      data-testid={testId || 'card'}
       role={onClick ? 'button' : undefined}
       tabIndex={onClick ? 0 : undefined}
     >
@@ -80,7 +80,7 @@ export function Card({
       <div className={styles.content}>
         {isLoading ? (
           <div className={styles.loading} role="status" aria-label="Loading">
-            <div className={styles.loadingSpinner} />
+            <div className={styles.loadingSpinner} data-testid="loading-spinner" />
           </div>
         ) : (
           children

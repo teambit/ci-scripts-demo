@@ -64,7 +64,7 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
     return (
       <div className={styles.container}>
         {label && (
-          <label className={styles.label}>
+          <label className={styles.label} htmlFor={testId || 'input'}>
             {label}
             {required && <span className={styles.required}>*</span>}
           </label>
@@ -73,6 +73,7 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
           {icon && <span className={styles.icon}>{icon}</span>}
           <input
             ref={ref}
+            id={testId || 'input'}
             type={type}
             value={value}
             placeholder={placeholder}

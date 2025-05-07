@@ -67,14 +67,14 @@ export function Button({
       data-testid={testId}
     >
       {loading && (
-        <span className={styles.spinner} aria-hidden="true" />
+        <span className={styles.spinner} data-testid="spinner" aria-hidden="true" />
       )}
       {icon && !loading && (
         <span className={styles.icon}>{icon}</span>
       )}
       <span className={styles.content}>{children}</span>
       {iconAfter && !loading && (
-        <span className={styles.icon}>{iconAfter}</span>
+        <span className={styles.iconAfter}>{iconAfter}</span>
       )}
     </button>
   );
