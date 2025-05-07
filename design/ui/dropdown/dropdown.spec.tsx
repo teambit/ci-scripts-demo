@@ -1,3 +1,4 @@
+import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
 import { vi } from 'vitest';
 import { BasicDropdown } from './dropdown.composition.js';
@@ -21,8 +22,12 @@ describe('Dropdown', () => {
   });
 
   it('should select an option when clicked', () => {
-    const consoleSpy =  vi.spyOn(console, 'log');
-    render(<BasicDropdown />);
+    const onChangeMock = vi.fn();
+    render(
+      <div style={{ width: '300px' }}>
+        <BasicDropdown onChange={onChangeMock} />
+      </div>
+    );
     
     // Open dropdown
     const trigger = screen.getByRole('button');
@@ -33,9 +38,7 @@ describe('Dropdown', () => {
     fireEvent.click(option);
     
     // Check if onChange was called with correct value
-    expect(consoleSpy).toHaveBeenCalledWith('Selected:', '1');
-    
-    consoleSpy.mockRestore();
+    expect(onChangeMock).toHaveBeenCalledWith('1');
   });
 
   it('should close dropdown when clicking outside', () => {
