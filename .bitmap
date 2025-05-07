@@ -37,6 +37,20 @@
             }
         }
     },
+    "ui/dropdown": {
+        "name": "ui/dropdown",
+        "scope": "",
+        "version": "",
+        "defaultScope": "automations",
+        "mainFile": "index.ts",
+        "rootDir": "automations/ui/dropdown",
+        "config": {
+            "bitdev.react/react-env@0a734828d968c74e981ef0ca77acb414e90ea08d": {},
+            "teambit.envs/envs": {
+                "env": "bitdev.react/react-env"
+            }
+        }
+    },
     "ui/input": {
         "name": "ui/input",
         "scope": "",
