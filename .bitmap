@@ -13,9 +13,9 @@
         "name": "ui/button",
         "scope": "",
         "version": "",
-        "defaultScope": "automations",
+        "defaultScope": "automations.design",
         "mainFile": "index.ts",
-        "rootDir": "automations/ui/button",
+        "rootDir": "design/ui/button",
         "config": {
             "bitdev.react/react-env@0a734828d968c74e981ef0ca77acb414e90ea08d": {},
             "teambit.envs/envs": {
@@ -27,9 +27,9 @@
         "name": "ui/card",
         "scope": "",
         "version": "",
-        "defaultScope": "automations",
+        "defaultScope": "automations.design",
         "mainFile": "index.ts",
-        "rootDir": "automations/ui/card",
+        "rootDir": "design/ui/card",
         "config": {
             "bitdev.react/react-env@0a734828d968c74e981ef0ca77acb414e90ea08d": {},
             "teambit.envs/envs": {
@@ -41,9 +41,9 @@
         "name": "ui/dropdown",
         "scope": "",
         "version": "",
-        "defaultScope": "automations",
+        "defaultScope": "automations.design",
         "mainFile": "index.ts",
-        "rootDir": "automations/ui/dropdown",
+        "rootDir": "design/ui/dropdown",
         "config": {
             "bitdev.react/react-env@0a734828d968c74e981ef0ca77acb414e90ea08d": {},
             "teambit.envs/envs": {
@@ -55,9 +55,9 @@
         "name": "ui/input",
         "scope": "",
         "version": "",
-        "defaultScope": "automations",
+        "defaultScope": "automations.design",
         "mainFile": "index.ts",
-        "rootDir": "automations/ui/input",
+        "rootDir": "design/ui/input",
         "config": {
             "bitdev.react/react-env@0a734828d968c74e981ef0ca77acb414e90ea08d": {},
             "teambit.envs/envs": {

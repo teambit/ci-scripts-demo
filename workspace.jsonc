@@ -27,7 +27,7 @@
     /**
      * default scope for all components in workspace.
      **/
-    "defaultScope": "automations.ui",
+    "defaultScope": "automations.design",
     "resolveAspectsFromNodeModules": true,
     "resolveEnvsFromRoots": true
   },
