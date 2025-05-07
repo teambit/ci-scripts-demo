@@ -11,59 +11,31 @@
 {
     "ui/button": {
         "name": "ui/button",
-        "scope": "",
-        "version": "",
-        "defaultScope": "automations.design",
+        "scope": "automations.design",
+        "version": "0.0.1",
         "mainFile": "index.ts",
-        "rootDir": "design/ui/button",
-        "config": {
-            "bitdev.react/react-env@0a734828d968c74e981ef0ca77acb414e90ea08d": {},
-            "teambit.envs/envs": {
-                "env": "bitdev.react/react-env"
-            }
-        }
+        "rootDir": "design/ui/button"
     },
     "ui/card": {
         "name": "ui/card",
-        "scope": "",
-        "version": "",
-        "defaultScope": "automations.design",
+        "scope": "automations.design",
+        "version": "0.0.1",
         "mainFile": "index.ts",
-        "rootDir": "design/ui/card",
-        "config": {
-            "bitdev.react/react-env@0a734828d968c74e981ef0ca77acb414e90ea08d": {},
-            "teambit.envs/envs": {
-                "env": "bitdev.react/react-env"
-            }
-        }
+        "rootDir": "design/ui/card"
     },
     "ui/dropdown": {
         "name": "ui/dropdown",
-        "scope": "",
-        "version": "",
-        "defaultScope": "automations.design",
+        "scope": "automations.design",
+        "version": "0.0.1",
         "mainFile": "index.ts",
-        "rootDir": "design/ui/dropdown",
-        "config": {
-            "bitdev.react/react-env@0a734828d968c74e981ef0ca77acb414e90ea08d": {},
-            "teambit.envs/envs": {
-                "env": "bitdev.react/react-env"
-            }
-        }
+        "rootDir": "design/ui/dropdown"
     },
     "ui/input": {
         "name": "ui/input",
-        "scope": "",
-        "version": "",
-        "defaultScope": "automations.design",
+        "scope": "automations.design",
+        "version": "0.0.1",
         "mainFile": "index.ts",
-        "rootDir": "design/ui/input",
-        "config": {
-            "bitdev.react/react-env@0a734828d968c74e981ef0ca77acb414e90ea08d": {},
-            "teambit.envs/envs": {
-                "env": "bitdev.react/react-env"
-            }
-        }
+        "rootDir": "design/ui/input"
     },
     "$schema-version": "17.0.0"
 }
