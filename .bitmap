@@ -16,6 +16,20 @@
         "mainFile": "index.ts",
         "rootDir": "design/patterns/form"
     },
+    "patterns/header": {
+        "name": "patterns/header",
+        "scope": "",
+        "version": "",
+        "defaultScope": "automations.design",
+        "mainFile": "index.ts",
+        "rootDir": "design/patterns/header",
+        "config": {
+            "bitdev.react/react-env@0a734828d968c74e981ef0ca77acb414e90ea08d": {},
+            "teambit.envs/envs": {
+                "env": "bitdev.react/react-env"
+            }
+        }
+    },
     "ui/button": {
         "name": "ui/button",
         "scope": "automations.design",
