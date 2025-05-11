@@ -27,8 +27,8 @@ importers:
         specifier: 1.6.22
         version: 1.6.22(react@19.0.0)
       '@teambit/git.ci':
-        specifier: 0.0.0-270708dff98c9f02c6f768f8a0205cf2b554a3ba
-        version: 0.0.0-270708dff98c9f02c6f768f8a0205cf2b554a3ba(graphql@16.11.0)
+        specifier: 0.0.0-5d9765861168846e8a2e239e48f11780629f58d3
+        version: 0.0.0-5d9765861168846e8a2e239e48f11780629f58d3(graphql@16.11.0)
       '@teambit/mdx.ui.mdx-scope-context':
         specifier: 1.0.7
         version: 1.0.7(@types/react@19.0.2)(react@19.0.0)
@@ -3230,8 +3230,8 @@ packages:
       react: ^16.8.0 || ^17.0.0
       react-dom: ^16.8.0 || ^17.0.0
 
-  '@teambit/git.ci@0.0.0-270708dff98c9f02c6f768f8a0205cf2b554a3ba':
-    resolution: {integrity: sha512-+KC+iXbq7eJpdu0odrNeBW40MDTDrKYwpYZD0wAdp3zM2LH4LszBn75nNhUFzxbyC6eGNyt1XXP9HHHMlRd6Sg==}
+  '@teambit/git.ci@0.0.0-5d9765861168846e8a2e239e48f11780629f58d3':
+    resolution: {integrity: sha512-HRvE80iWadD5A2clFBRfyPhfkI8DIw1BTD3XFnMbeO3Ta+7tCIyrcxxnpygm2rLW+bwzvhBBCZymt5kwPxGy5w==}
     engines: {node: '>=16.0.0'}
 
   '@teambit/git.modules.git-ignore@1.0.2':
@@ -13417,7 +13417,7 @@ snapshots:
       react: 19.0.0
       react-dom: 19.0.0(react@19.0.0)
 
-  '@teambit/git.ci@0.0.0-270708dff98c9f02c6f768f8a0205cf2b554a3ba(graphql@16.11.0)':
+  '@teambit/git.ci@0.0.0-5d9765861168846e8a2e239e48f11780629f58d3(graphql@16.11.0)':
     dependencies:
       '@bitdev/harmony.harmony': 1.0.19
       '@teambit/component-id': 1.2.4
@@ -13582,6 +13582,7 @@ snapshots:
       lodash: 4.17.21
       p-filter: 2.1.0
     transitivePeerDependencies:
+      - domexception
       - encoding
       - graphql
       - supports-color
@@ -13610,7 +13611,7 @@ snapshots:
       '@teambit/legacy.scope': 0.0.49(graphql@16.11.0)
       '@teambit/legacy.utils': 0.0.21
       '@teambit/scope.remotes': 0.0.49(graphql@16.11.0)
-      '@teambit/semantics.doc-parser': 0.0.57
+      '@teambit/semantics.doc-parser': 0.0.57(graphql@16.11.0)
       '@teambit/toolbox.crypto.sha1': 0.0.7
       '@teambit/toolbox.fs.last-modified': 0.0.5
       '@teambit/toolbox.path.path': 0.0.8
@@ -14291,7 +14292,7 @@ snapshots:
       - graphql
       - supports-color
 
-  '@teambit/semantics.doc-parser@0.0.57':
+  '@teambit/semantics.doc-parser@0.0.57(graphql@16.11.0)':
     dependencies:
       '@teambit/bit-error': 0.0.404
       '@teambit/component.sources': 0.0.101(graphql@16.11.0)
@@ -14303,7 +14304,9 @@ snapshots:
       fs-extra: 10.0.0
       react-docgen: 5.3.1
     transitivePeerDependencies:
+      - domexception
       - encoding
+      - graphql
       - supports-color
 
   '@teambit/tests-results@1.0.5': {}
