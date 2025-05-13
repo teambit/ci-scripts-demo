@@ -18,17 +18,10 @@
     },
     "patterns/header": {
         "name": "patterns/header",
-        "scope": "",
-        "version": "",
-        "defaultScope": "automations.design",
+        "scope": "automations.design",
+        "version": "0.0.1",
         "mainFile": "index.ts",
-        "rootDir": "design/patterns/header",
-        "config": {
-            "bitdev.react/react-env@0a734828d968c74e981ef0ca77acb414e90ea08d": {},
-            "teambit.envs/envs": {
-                "env": "bitdev.react/react-env"
-            }
-        }
+        "rootDir": "design/patterns/header"
     },
     "ui/button": {
         "name": "ui/button",
