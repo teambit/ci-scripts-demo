@@ -77,4 +77,15 @@ describe('Button', () => {
     render(<Button data-testid="test-button">Click me</Button>);
     expect(screen.getByTestId('test-button')).toBeInTheDocument();
   });
+
+  it('renders with correct type attribute', () => {
+    const { rerender } = render(<Button type="button">Button</Button>);
+    expect(screen.getByRole('button')).toHaveAttribute('type', 'button');
+
+    rerender(<Button type="submit">Button</Button>);
+    expect(screen.getByRole('button')).toHaveAttribute('type', 'submit');
+
+    rerender(<Button type="reset">Button</Button>);
+    expect(screen.getByRole('button')).toHaveAttribute('type', 'reset');
+  });
 });
