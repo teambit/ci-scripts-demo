@@ -26,4 +26,3 @@ jobs:
         run: bit ci verify
         env:
           BIT_CONFIG_USER_TOKEN: ${{ secrets.BIT_ACCESS_TOKEN }} 
-          BIT_DISABLE_CONSOLE: "false"
