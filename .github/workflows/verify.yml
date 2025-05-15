@@ -8,7 +8,7 @@ jobs:
     container:
       image: bitsrc/stable:1.9.124-alpine
       env:
-        BIT_DISABLE_CONSOLE: "false"
+        BIT_DISABLE_SPINNER: "false"
 
     steps:
       - name: Checkout repository
