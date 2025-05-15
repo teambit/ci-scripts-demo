@@ -23,6 +23,7 @@ jobs:
           BIT_CONFIG_USER_TOKEN: ${{ secrets.BIT_ACCESS_TOKEN }} 
 
       - name: Verify workspace
-        run: bit ci verify --log=info
+        run: bit ci verify
         env:
           BIT_CONFIG_USER_TOKEN: ${{ secrets.BIT_ACCESS_TOKEN }} 
+          BIT_DISABLE_CONSOLE: "false"
