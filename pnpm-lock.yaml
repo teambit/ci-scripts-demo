@@ -27,8 +27,8 @@ importers:
         specifier: 1.6.22
         version: 1.6.22(react@19.0.0)
       '@teambit/git.ci':
-        specifier: 0.0.0-1b6ae993cb8b91a0e5e12d3af37cf486f439c7e9
-        version: 0.0.0-1b6ae993cb8b91a0e5e12d3af37cf486f439c7e9(graphql@16.11.0)
+        specifier: 0.0.0-ae492e36a6718424ae49062b16f9e58d4e0257d9
+        version: 0.0.0-ae492e36a6718424ae49062b16f9e58d4e0257d9(graphql@16.11.0)
       '@teambit/mdx.ui.mdx-scope-context':
         specifier: 1.0.7
         version: 1.0.7(@types/react@19.0.2)(react@19.0.0)
@@ -3230,8 +3230,8 @@ packages:
       react: ^16.8.0 || ^17.0.0
       react-dom: ^16.8.0 || ^17.0.0
 
-  '@teambit/git.ci@0.0.0-1b6ae993cb8b91a0e5e12d3af37cf486f439c7e9':
-    resolution: {integrity: sha512-MbroEP1yjl4wVqYhVRAnZ+Xi+Ul1DBXNRJgyNOiavPv4VjHUGUt0prvFgbqUqusM45lAFBVZ10NQ/UoTA8FRUA==}
+  '@teambit/git.ci@0.0.0-ae492e36a6718424ae49062b16f9e58d4e0257d9':
+    resolution: {integrity: sha512-o3u+nXpX180MrbiNNuBTimr7yM+i+Yl8yU3VfysGB/UvZ9qmYVzk7hVf2cfeyKLJs9FseuQYGOF2UyIBUspGmg==}
     engines: {node: '>=16.0.0'}
 
   '@teambit/git.modules.git-ignore@1.0.2':
@@ -12887,7 +12887,7 @@ snapshots:
       '@teambit/legacy.extension-data': 0.0.51(graphql@16.11.0)
       '@teambit/legacy.logger': 0.0.19
       '@teambit/legacy.scope': 0.0.49(graphql@16.11.0)
-      '@teambit/pkg.modules.component-package-name': 0.0.56(graphql@16.11.0)
+      '@teambit/pkg.modules.component-package-name': 0.0.56
       '@teambit/toolbox.fs.link-or-symlink': 0.0.20
       '@teambit/toolbox.fs.remove-empty-dir': 0.0.5
       '@teambit/toolbox.path.path': 0.0.8
@@ -13412,7 +13412,7 @@ snapshots:
       react: 19.0.0
       react-dom: 19.0.0(react@19.0.0)
 
-  '@teambit/git.ci@0.0.0-1b6ae993cb8b91a0e5e12d3af37cf486f439c7e9(graphql@16.11.0)':
+  '@teambit/git.ci@0.0.0-ae492e36a6718424ae49062b16f9e58d4e0257d9(graphql@16.11.0)':
     dependencies:
       '@bitdev/harmony.harmony': 1.0.19
       '@teambit/component-id': 1.2.4
@@ -13892,7 +13892,7 @@ snapshots:
 
   '@teambit/node.deps-detectors.parser-helper@0.0.0-1ca3300f0fe89cba790beb930903095053a2a24a': {}
 
-  '@teambit/pkg.modules.component-package-name@0.0.56(graphql@16.11.0)':
+  '@teambit/pkg.modules.component-package-name@0.0.56':
     dependencies:
       '@teambit/component-id': 1.2.4
       '@teambit/legacy.constants': 0.0.11
@@ -13901,10 +13901,7 @@ snapshots:
       '@teambit/legacy.utils': 0.0.21
       '@teambit/toolbox.path.path': 0.0.8
     transitivePeerDependencies:
-      - domexception
       - encoding
-      - graphql
-      - supports-color
 
   '@teambit/pkg.package-json.validator@0.0.1': {}
 
