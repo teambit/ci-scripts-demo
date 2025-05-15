@@ -14,7 +14,7 @@ jobs:
     if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     container:
-      image: bitsrc/stable:1.9.124-alpine
+      image: bitsrc/stable:latest-alpine
 
     steps:
       - name: Checkout repository

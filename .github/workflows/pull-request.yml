@@ -8,7 +8,7 @@ jobs:
   pr-check:
     runs-on: ubuntu-latest
     container:
-      image: bitsrc/stable:1.9.124-alpine
+      image: bitsrc/stable:latest-alpine
 
     steps:
       - name: Checkout repository

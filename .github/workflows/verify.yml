@@ -6,9 +6,7 @@ jobs:
   verify:
     runs-on: ubuntu-latest
     container:
-      image: bitsrc/stable:1.9.124-alpine
-      env:
-        BIT_DISABLE_SPINNER: "false"
+      image: bitsrc/stable:latest-alpine
 
     steps:
       - name: Checkout repository
