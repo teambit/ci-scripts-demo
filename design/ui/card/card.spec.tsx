@@ -81,4 +81,18 @@ describe('Card', () => {
     );
     expect(screen.getByTestId('card')).toHaveClass('custom-class');
   });
+
+  it('renders footer content when provided', () => {
+    render(
+      <Card 
+        title="Test Title" 
+        footer={<button>Action Button</button>}
+      >
+        <p>Test Content</p>
+      </Card>
+    );
+
+    expect(screen.getByText('Action Button')).toBeInTheDocument();
+    expect(screen.getByRole('button')).toBeInTheDocument();
+  });
 });
