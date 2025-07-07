@@ -12,7 +12,7 @@
     "patterns/form": {
         "name": "patterns/form",
         "scope": "automations.design",
-        "version": "0.0.3",
+        "version": "0.0.4",
         "mainFile": "index.ts",
         "rootDir": "design/patterns/form"
     },
