@@ -5,24 +5,17 @@ on: push
 jobs:
   verify:
     runs-on: ubuntu-latest
-    container:
-      image: bitsrc/stable:latest-alpine
+    env:
+      BIT_CONFIG_ACCESS_TOKEN: ${{ secrets.BIT_CONFIG_ACCESS_TOKEN }}
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Install dependencies
-        run: bit install
-        env:
-          BIT_CONFIG_USER_TOKEN: ${{ secrets.BIT_ACCESS_TOKEN }} 
-      
-      - name: List components
-        run: bit list automations.design
-        env:
-          BIT_CONFIG_USER_TOKEN: ${{ secrets.BIT_ACCESS_TOKEN }} 
-
-      - name: Verify workspace
-        run: bit ci verify
-        env:
-          BIT_CONFIG_USER_TOKEN: ${{ secrets.BIT_ACCESS_TOKEN }} 
+      - name: Initialize Bit
+        uses: bit-tasks/init@v3
+        with:
+            ws-dir: '.'
+            
+      - name: Bit Verify
+        uses: bit-tasks/verify@v2

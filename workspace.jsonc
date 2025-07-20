@@ -59,5 +59,7 @@
   "teambit.workspace/workspace-config-files": {
     "enableWorkspaceConfigWrite": true
   },
-  "teambit.git/ci@1024a22a3d4486e04c645d51d725e97ed654ccc8": {}
+  "teambit.harmony/bit": {
+    "engine": "1.12.2"
+  }
 }

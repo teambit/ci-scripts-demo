@@ -13,19 +13,22 @@ jobs:
   main-merge:
     if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
-    container:
-      image: bitsrc/stable:latest-alpine
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      BIT_CONFIG_ACCESS_TOKEN: ${{ secrets.BIT_CONFIG_ACCESS_TOKEN }}
+      GIT_USER_NAME: ${{ secrets.GIT_USER_NAME }}
+      GIT_USER_EMAIL: ${{ secrets.GIT_USER_EMAIL }}
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Install dependencies
-        run: bit install
-        env:
-          BIT_CONFIG_USER_TOKEN: ${{ secrets.BIT_ACCESS_TOKEN }} 
-
-      - name: Merge
-        run: bit ci merge -b
-        env:
-          BIT_CONFIG_USER_TOKEN: ${{ secrets.BIT_ACCESS_TOKEN }} 
+      - name: Initialize Bit
+        uses: bit-tasks/init@v3
+        with:
+            ws-dir: '.'
+            
+      - name: Bit Tag and Export
+        uses: bit-tasks/tag-export@v3
+        with:
+          build: true
