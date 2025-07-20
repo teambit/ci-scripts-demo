@@ -6,7 +6,7 @@ jobs:
   verify:
     runs-on: ubuntu-latest
     env:
-      BIT_CONFIG_ACCESS_TOKEN: ${{ secrets.BIT_CONFIG_ACCESS_TOKEN }}
+      BIT_CONFIG_ACCESS_TOKEN: ${{ secrets.BIT_ACCESS_TOKEN }}
 
     steps:
       - name: Checkout repository
@@ -16,6 +16,6 @@ jobs:
         uses: bit-tasks/init@v3
         with:
             ws-dir: '.'
-            
+
       - name: Bit Verify
         uses: bit-tasks/verify@v2
