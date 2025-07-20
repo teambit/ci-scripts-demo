@@ -14,42 +14,60 @@
         "scope": "automations.design",
         "version": "0.0.4",
         "mainFile": "index.ts",
-        "rootDir": "design/patterns/form"
+        "rootDir": "design/patterns/form",
+        "config": {
+            "bitdev.react/react-env@4.1.11": {}
+        }
     },
     "patterns/header": {
         "name": "patterns/header",
         "scope": "automations.design",
         "version": "0.0.2",
         "mainFile": "index.ts",
-        "rootDir": "design/patterns/header"
+        "rootDir": "design/patterns/header",
+        "config": {
+            "bitdev.react/react-env@4.1.11": {}
+        }
     },
     "ui/button": {
         "name": "ui/button",
         "scope": "automations.design",
         "version": "0.0.2",
         "mainFile": "index.ts",
-        "rootDir": "design/ui/button"
+        "rootDir": "design/ui/button",
+        "config": {
+            "bitdev.react/react-env@4.1.11": {}
+        }
     },
     "ui/card": {
         "name": "ui/card",
         "scope": "automations.design",
         "version": "0.0.2",
         "mainFile": "index.ts",
-        "rootDir": "design/ui/card"
+        "rootDir": "design/ui/card",
+        "config": {
+            "bitdev.react/react-env@4.1.11": {}
+        }
     },
     "ui/dropdown": {
         "name": "ui/dropdown",
         "scope": "automations.design",
         "version": "0.0.1",
         "mainFile": "index.ts",
-        "rootDir": "design/ui/dropdown"
+        "rootDir": "design/ui/dropdown",
+        "config": {
+            "bitdev.react/react-env@4.1.11": {}
+        }
     },
     "ui/input": {
         "name": "ui/input",
         "scope": "automations.design",
         "version": "0.0.2",
         "mainFile": "index.ts",
-        "rootDir": "design/ui/input"
+        "rootDir": "design/ui/input",
+        "config": {
+            "bitdev.react/react-env@4.1.11": {}
+        }
     },
     "$schema-version": "17.0.0"
 }
