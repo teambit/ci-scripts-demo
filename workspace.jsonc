@@ -60,6 +60,6 @@
     "enableWorkspaceConfigWrite": true
   },
   "teambit.harmony/bit": {
-    "engine": "1.12.2"
+    "engine": "1.12.6"
   }
 }

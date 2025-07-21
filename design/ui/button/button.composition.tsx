@@ -5,3 +5,10 @@ export const BasicButton = () => {
     <Button>hello world!</Button>
   );
 }
+
+export const BasicButton2 = () => {
+  return (
+    <Button>hello world2!</Button>
+  );
+}
+
