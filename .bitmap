@@ -12,7 +12,7 @@
     "patterns/form": {
         "name": "patterns/form",
         "scope": "automations.design",
-        "version": "0.0.6",
+        "version": "17b3248c91cb68e7db9c47d33a9fdc5df18fceab",
         "mainFile": "index.ts",
         "rootDir": "design/patterns/form"
     },
@@ -26,7 +26,7 @@
     "ui/button": {
         "name": "ui/button",
         "scope": "automations.design",
-        "version": "0.0.4",
+        "version": "fdf6acfb53f1b851aa0558ea8d01734c22c6f5a1",
         "mainFile": "index.ts",
         "rootDir": "design/ui/button"
     },
@@ -51,5 +51,12 @@
         "mainFile": "index.ts",
         "rootDir": "design/ui/input"
     },
-    "$schema-version": "17.0.0"
+    "$schema-version": "17.0.0",
+    "_bit_lane": {
+        "id": {
+            "name": "add-button-docs",
+            "scope": "automations.design"
+        },
+        "exported": true
+    }
 }
