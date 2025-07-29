@@ -33,7 +33,7 @@
     "ui/card": {
         "name": "ui/card",
         "scope": "automations.design",
-        "version": "4d8779f6a955f5f2f7ba8436b9b7724786ab3e4a",
+        "version": "0.0.4",
         "mainFile": "index.ts",
         "rootDir": "design/ui/card"
     },
@@ -51,12 +51,5 @@
         "mainFile": "index.ts",
         "rootDir": "design/ui/input"
     },
-    "$schema-version": "17.0.0",
-    "_bit_lane": {
-        "id": {
-            "name": "add-card-docs",
-            "scope": "automations.design"
-        },
-        "exported": true
-    }
+    "$schema-version": "17.0.0"
 }
