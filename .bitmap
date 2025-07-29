@@ -12,7 +12,7 @@
     "patterns/form": {
         "name": "patterns/form",
         "scope": "automations.design",
-        "version": "0.0.7",
+        "version": "0.0.9",
         "mainFile": "index.ts",
         "rootDir": "design/patterns/form"
     },
@@ -26,14 +26,14 @@
     "ui/button": {
         "name": "ui/button",
         "scope": "automations.design",
-        "version": "0.0.5",
+        "version": "0.0.6",
         "mainFile": "index.ts",
         "rootDir": "design/ui/button"
     },
     "ui/card": {
         "name": "ui/card",
         "scope": "automations.design",
-        "version": "0.0.3",
+        "version": "4d8779f6a955f5f2f7ba8436b9b7724786ab3e4a",
         "mainFile": "index.ts",
         "rootDir": "design/ui/card"
     },
@@ -51,5 +51,12 @@
         "mainFile": "index.ts",
         "rootDir": "design/ui/input"
     },
-    "$schema-version": "17.0.0"
+    "$schema-version": "17.0.0",
+    "_bit_lane": {
+        "id": {
+            "name": "add-card-docs",
+            "scope": "automations.design"
+        },
+        "exported": true
+    }
 }
